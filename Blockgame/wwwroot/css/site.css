@@ -1,0 +1,82 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#game {
+    border: 2px solid black;
+    margin: 50px;
+    height: 200px;
+    width: 500px;
+}
+
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    top: 150px;
+    left:20px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+#block {
+  
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 130px;
+    animation: block 1s infinite linear;
+}
+
+
+@keyframes block {
+    0% {
+        left: 480px
+    }
+
+    100% {
+        left: 0px
+    }
+}
+
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+  
+
+    60%{
+        top:50px;
+    }
+   
+
+    100% {
+        top: 150px;
+    }
+}
